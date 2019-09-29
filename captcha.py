@@ -50,8 +50,6 @@ def get_next_batch(batch_size=64):
     return batch_x, batch_y
 
 
-####################################################
-
 X = tf.placeholder(tf.float32, [None, IMAGE_HEIGHT * IMAGE_WIDTH])
 Y = tf.placeholder(tf.float32, [None, MAX_CAPTCHA * CHAR_SET_LEN])
 keep_prob = tf.placeholder(tf.float32)
